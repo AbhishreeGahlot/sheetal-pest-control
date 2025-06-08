@@ -1,0 +1,297 @@
+/* Base font */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar branding */
+.logo-img {
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1); /* increases size by 10% */
+}
+
+.brand-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* nav bar  */
+.navbar-nav
+{
+  font-size: 20px;
+}
+
+/* Hero section */
+h1.display-4 {
+  color: #ffffff;
+}
+
+
+.hero {
+  position: relative;
+  background-image: url('../assets/img/bg_1.png'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* Overlay for darkening background */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Increased contrast for readability */
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Headings and Paragraphs */
+.hero .hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero .hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+/* CTA Button */
+.hero .hero-content .btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #28a745;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.hero .hero-content .btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero .hero-content p {
+    font-size: 1rem;
+  }
+}
+/* about us section */
+.fw-bold 
+{
+  color:#003E6B;
+}
+
+.text-center p
+{
+  font-size: 20px;
+}
+
+
+
+/* Services Icons */
+.service-icon {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+
+/* Card spacing */
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title
+{
+  color:#00AEEF;
+  font-size: larger;
+  font-weight:bold;
+
+}
+
+
+
+
+/* gallery  */
+.gallery-img-wrapper {
+  height: 250px; /* set the desired fixed height */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* And more" */
+.btn-outline-success {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #198754;
+    color: #fff;
+  }
+  
+
+/* Testimonials */
+blockquote {
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+footer strong {
+  color: #333;
+}
+
+
+
+/* ABOUT.CSS */
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.about-section h2 {
+  font-weight: 700;
+  color: #003E6B;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.about-section h4,
+.about-section h5 {
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.about-section ul {
+  padding-left: 20px;
+}
+
+.about-section li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-section i {
+  font-size: 16px;
+  color: #198754;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* about page content */
+.list-unstyled
+{
+  font-size: large;
+}
+
+/* clients and testimonials */
+/* for clients images */
+.clients-section img {
+  max-height: 150px;
+  object-fit: contain;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clients-section img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* testimonials */
+.testimonial-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card h5,
+.testimonial-card p {
+  word-wrap: break-word;
+}
+

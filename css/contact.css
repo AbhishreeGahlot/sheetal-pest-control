@@ -1,0 +1,23 @@
+.contact-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    .btn-primary {
+      background-color: #28a745;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #218838;
+    }

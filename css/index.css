@@ -1,0 +1,47 @@
+.hero-carousel {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* === Hero Section (Below Banner) === */
+.hero {
+  height: 50vh;
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+}
+
+/* Optional: Limit hero content width */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* === Reusable Styling === */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery {
+  transition: transform 0.4s ease;
+  border-radius: 10px;
+}
+.gallery:hover {
+  transform: scale(1.05);
+}
